@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko rendley.swan</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #943f94;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background: #dca8e7;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* GRID */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: #ab7fb5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* 🔥 KOTAK PERSEGI */
+        .product img {
+            width: 100%;
+            aspect-ratio: 1 / 1; /* ini bikin kotak */
+            object-fit: cover;   /* biar gambar pas */
+            border-radius: 8px;
+        }
+
+        .product span {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: orange;
+        }
+
+        button {
+            background: #d39dd3;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>TOKO RENDLEY.SWAN</h1>
+    <p>Koleksi Pakaian Terbaik</p>
+</header>
+
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#">Unggulan</a>
+    <a href="#">Terbaru</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Rendley Picks</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400">
+                <h3>Jaket Leather</h3>
+                <span>Rp 1.499.000</span>
+                <button>Beli</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400">
+                <h3>Dress Midi</h3>
+                <span>Rp 999.000</span>
+                <button>Beli</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Style of The Week</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400">
+                <h3>Blouse Elegant</h3>
+                <span>Rp 699.000</span>
+                <button>Beli</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Email: zahramaharin@gmail.com</p>
+    <p>WhatsApp: 0812-2066-9484</p>
+    <p>&copy; 2026 rendley.swan</p>
+</footer>
+
+</body>
+</html>
